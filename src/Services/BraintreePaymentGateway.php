@@ -2,12 +2,12 @@
 
 namespace hoursefly\Cashier\Services;
 
-use Acelle\Library\Contracts\PaymentGatewayInterface;
+use hoursefly\Library\Contracts\PaymentGatewayInterface;
 use hoursefly\Cashier\Cashier;
 use Carbon\Carbon;
-use Acelle\Model\Invoice;
-use Acelle\Library\TransactionVerificationResult;
-use Acelle\Model\Transaction;
+use hoursefly\Model\Invoice;
+use hoursefly\Library\TransactionVerificationResult;
+use hoursefly\Model\Transaction;
 
 class BraintreePaymentGateway implements PaymentGatewayInterface
 {

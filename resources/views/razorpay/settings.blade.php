@@ -58,7 +58,7 @@
             <hr>
             <div class="text-left">
                 @if ($gateway->isActive())
-                    @if (!\Acelle\Library\Facades\Billing::isGatewayEnabled($gateway))
+                    @if (!\hoursefly\Library\Facades\Billing::isGatewayEnabled($gateway))
                         <input type="submit" name="enable_gateway" class="btn btn-mc_primary mr-5" value="{{ trans('cashier::messages.save_and_enable') }}" />
                         <button class="btn btn-mc_default mr-5">{{ trans('messages.save') }}</button>
                     @else

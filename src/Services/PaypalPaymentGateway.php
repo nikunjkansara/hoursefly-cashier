@@ -3,16 +3,16 @@
 namespace hoursefly\Cashier\Services;
 
 use hoursefly\Cashier\Cashier;
-use Acelle\Library\Contracts\PaymentGatewayInterface;
+use hoursefly\Library\Contracts\PaymentGatewayInterface;
 use Carbon\Carbon;
 use Sample\PayPalClient;
 use PayPalCheckoutSdk\Orders\OrdersGetRequest;
 use PayPalCheckoutSdk\Core\PayPalHttpClient;
 use PayPalCheckoutSdk\Core\SandboxEnvironment;
 use PayPalCheckoutSdk\Core\ProductionEnvironment;
-use Acelle\Model\Invoice;
-use Acelle\Library\TransactionVerificationResult;
-use Acelle\Model\Transaction;
+use hoursefly\Model\Invoice;
+use hoursefly\Library\TransactionVerificationResult;
+use hoursefly\Model\Transaction;
 
 class PaypalPaymentGateway implements PaymentGatewayInterface
 {

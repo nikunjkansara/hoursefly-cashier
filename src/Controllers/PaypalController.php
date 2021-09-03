@@ -2,17 +2,17 @@
 
 namespace hoursefly\Cashier\Controllers;
 
-use Acelle\Http\Controllers\Controller;
+use hoursefly\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log as LaravelLog;
 use hoursefly\Cashier\Cashier;
 use hoursefly\Cashier\Services\PaypalPaymentGateway;
-use Acelle\Library\Facades\Billing;
-use Acelle\Model\Setting;
-use Acelle\Model\Invoice;
-use Acelle\Library\TransactionVerificationResult;
-use Acelle\Model\Transaction;
-use Acelle\Library\AutoBillingData;
+use hoursefly\Library\Facades\Billing;
+use hoursefly\Model\Setting;
+use hoursefly\Model\Invoice;
+use hoursefly\Library\TransactionVerificationResult;
+use hoursefly\Model\Transaction;
+use hoursefly\Library\AutoBillingData;
 
 class PaypalController extends Controller
 {

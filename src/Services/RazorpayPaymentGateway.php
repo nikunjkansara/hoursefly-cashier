@@ -3,12 +3,12 @@
 namespace hoursefly\Cashier\Services;
 
 use Illuminate\Support\Facades\Log;
-use Acelle\Library\Contracts\PaymentGatewayInterface;
+use hoursefly\Library\Contracts\PaymentGatewayInterface;
 use Carbon\Carbon;
 use hoursefly\Cashier\Cashier;
-use Acelle\Model\Invoice;
-use Acelle\Library\TransactionVerificationResult;
-use Acelle\Model\Transaction;
+use hoursefly\Model\Invoice;
+use hoursefly\Library\TransactionVerificationResult;
+use hoursefly\Model\Transaction;
 
 class RazorpayPaymentGateway implements PaymentGatewayInterface
 {

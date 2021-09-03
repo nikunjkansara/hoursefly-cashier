@@ -7,13 +7,13 @@ use Stripe\Card as StripeCard;
 use Stripe\Token as StripeToken;
 use Stripe\Customer as StripeCustomer;
 use Stripe\Subscription as StripeSubscription;
-use Acelle\Library\Contracts\PaymentGatewayInterface;
+use hoursefly\Library\Contracts\PaymentGatewayInterface;
 use Carbon\Carbon;
 use hoursefly\Cashier\Cashier;
-use Acelle\Library\AutoBillingData;
-use Acelle\Model\Invoice;
-use Acelle\Library\TransactionVerificationResult;
-use Acelle\Model\Transaction;
+use hoursefly\Library\AutoBillingData;
+use hoursefly\Model\Invoice;
+use hoursefly\Library\TransactionVerificationResult;
+use hoursefly\Model\Transaction;
 
 class StripePaymentGateway implements PaymentGatewayInterface
 {

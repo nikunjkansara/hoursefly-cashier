@@ -2,15 +2,15 @@
 
 namespace hoursefly\Cashier\Controllers;
 
-use Acelle\Http\Controllers\Controller;
+use hoursefly\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log as LaravelLog;
 use hoursefly\Cashier\Cashier;
-use Acelle\Model\Setting;
-use Acelle\Library\Facades\Billing;
-use Acelle\Library\TransactionVerificationResult;
-use Acelle\Model\Invoice;
-use Acelle\Model\Transaction;
+use hoursefly\Model\Setting;
+use hoursefly\Library\Facades\Billing;
+use hoursefly\Library\TransactionVerificationResult;
+use hoursefly\Model\Invoice;
+use hoursefly\Model\Transaction;
 
 class OfflineController extends Controller
 {

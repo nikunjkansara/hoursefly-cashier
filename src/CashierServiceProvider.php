@@ -3,7 +3,7 @@
 namespace hoursefly\Cashier;
 
 use Illuminate\Support\ServiceProvider;
-use Acelle\Library\Facades\Billing;
+use hoursefly\Library\Facades\Billing;
 use hoursefly\Cashier\Services\StripePaymentGateway;
 use hoursefly\Cashier\Services\OfflinePaymentGateway;
 use hoursefly\Cashier\Services\BraintreePaymentGateway;
@@ -11,8 +11,8 @@ use hoursefly\Cashier\Services\CoinpaymentsPaymentGateway;
 use hoursefly\Cashier\Services\PaystackPaymentGateway;
 use hoursefly\Cashier\Services\PaypalPaymentGateway;
 use hoursefly\Cashier\Services\RazorpayPaymentGateway;
-use Acelle\Model\Setting;
-use Acelle\Library\Facades\Hook;
+use hoursefly\Model\Setting;
+use hoursefly\Library\Facades\Hook;
 
 class CashierServiceProvider extends ServiceProvider
 {
@@ -31,7 +31,7 @@ class CashierServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'cashier');
 
         if (!file_exists(storage_path('app/cashier/lang/en/messages.php'))) {
-            \Acelle\Helpers\pcopy(__DIR__.'/../resources/lang/en/messages.php', storage_path('app/cashier/lang/en/messages.php'));
+            \hoursefly\Helpers\pcopy(__DIR__.'/../resources/lang/en/messages.php', storage_path('app/cashier/lang/en/messages.php'));
         }
 
         // lang
